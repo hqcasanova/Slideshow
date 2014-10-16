@@ -1,0 +1,29 @@
+.slide-controls {
+  text-align: center;
+}
+.slide-controls * {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  border-color: #fff;
+  border-radius: 100%;
+}
+.slide-controls .control {
+  margin-right: .2em;
+  width: 2.75em;
+  line-height: 2.75em;
+  font-size: 1.85em;
+  border-width: .15em; 
+  border-style: solid;
+}
+.slide-controls .current {
+  background-color: #fff;
+  color: #000;
+}
+.slide-controls .leading {
+  margin-right: .2em;
+  width: 5px;
+  height: 5px;    /* couldn't achieve perfectly rounded circles with fractional ems */
+  background-color: #fff;
+  opacity: 0;     /* will vary to indicate timeout progress */
+};
