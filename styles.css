@@ -54,3 +54,17 @@ section {
   color: #fff;
   background-color: #ea7878;
 }
+
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 640px) {
+  body {font-size: 125%}
+}
+@media only screen and (min-width: 960px) {
+  body {font-size: 150%}
+}
+@media only screen and (min-width: 1280px) {
+  body {font-size: 175%}
+}
+@media only screen and (min-width: 1600px) {
+  body {font-size: 200%}
+}
