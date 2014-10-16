@@ -4,7 +4,7 @@ Slideshow with a progress indicator
 Browser support
 ----------------
 
-Latest versions of Chrome and Safari on Mac and IOS are assumed. Given the possibility of mobile devices, a mobile-first approach will be used.
+Latest versions (as of Oct 2014) of Chrome and Safari on Mac and IOS are assumed. Given the possibility of mobile devices, a mobile-first approach will be used.
 
 Implementation
 ----------------
@@ -14,7 +14,7 @@ very smooth CSS animations that integrate seamlessly with the controls, which is
 case. Naturally, they also require (at least) the number of slides to be known in advance since they
 either rely on checkbox or target styling. For example, [CSSSlider](http://cssslider.com).
 
-For the sake of modularity and flexibility then, I have chosen a JavaScript as the core implementation technology. The challenge here might be avoiding interference between any CSS animation and JS behaviour.
+For the sake of modularity and flexibility then, I have chosen JavaScript as the core implementation technology. The challenge here might be avoiding interference between any CSS animation and JS behaviour.
 
 
 
