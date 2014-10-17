@@ -4,7 +4,7 @@ Slideshow with a progress indicator
 Browser support
 ----------------
 
-Latest versions (as of Oct 2014) of Chrome and Safari on Mac and IOS are assumed. Given the possibility of mobile devices, a mobile-first approach will be used.
+Latest versions (as of Oct 2014) of Chrome and Safari on Mac and IOS are assumed. Given the possibility of mobile devices, a mobile-first approach will be used. Also, there are no requirements regarding the presence/absence of JavaScript.
 
 Implementation
 ----------------

@@ -6,16 +6,13 @@
     <!-- The following contains page-specific styles. For the purposes of clarity, it has been
     kept separate from the slideshow styles but all would ideally be joined for performance -->
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400">
     
     <!-- The following contains only the styles pertaining to the slideshow -->
-    <link rel="stylesheet" type="text/css" href="slideshow.css">
-    
-    <!-- Slideshow behaviours -->
-    <script href="slideshow.js"></script>
+    <link rel="stylesheet" type="text/css" href="slideshow.css">   
   </head>
   <body>
-    <section class="slideshow">
+    <article class="slideshow">
       <ul class="slide-controls">
         <li class="progress"></li>
         <li class="progress"></li>
@@ -28,11 +25,15 @@
         <li class="control">3</li>
         <li class="progress"></li>
         <li class="progress"></li>
-        <li class="control">14</li>
+        <li class="control">4</li>
       </ul>
-      <p class="slide-container" data-timeout="200">
-        
-      </p>
-    </section>
+      <div class="slide-deck" data-timeout="200">
+        <img id="s1" src="https://farm6.staticflickr.com/5312/7051019357_9b31935926_b.jpg" width="1024" height="488" alt="Lava sky (Tenerife, Canary Islands)">
+        <div id="s2" class="void"><span>Slide two</span></div>
+        <img id="s3" src="https://farm7.staticflickr.com/6158/6136029946_c6e94b3526_b.jpg" width="1024" height="444" alt="At the top of shadowed San Andres Valley (Tenerife, Canary Islands)">
+        <div id="s4" class="void"><span>Slide four</span></div>
+      </div>
+    </article>
+    <script src="slideshow.js"></script>
   </body>
 </html>
