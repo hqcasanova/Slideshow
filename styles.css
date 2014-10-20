@@ -65,9 +65,7 @@ body {position: relative}
 
 /* RESPONSIVE DESIGN */
 @media only screen and (max-width: 370px) {
-  body .slide-controls .progress {
-    display: none;
-  }
+  body .slide-nav .progress {display: none}
 }
 @media only screen and (min-width: 640px) {
   body {font-size: 125%}

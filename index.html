@@ -14,25 +14,12 @@
   </head>
   <body>
     <article class="slideshow">
-      <ul class="slide-controls">
-        <li class="progress"></li>
-        <li class="progress"></li>
-        <li class="control">1</li>
-        <li class="progress"></li>
-        <li class="progress"></li>
-        <li class="control current">2</li>
-        <li class="progress"></li>
-        <li class="progress"></li>
-        <li class="control">3</li>
-        <li class="progress"></li>
-        <li class="progress"></li>
-        <li class="control">4</li>
-      </ul>
-      <div class="slide-deck" data-timeout="200">
+      <!-- The timeout must be in ms -->
+      <div class="slide-deck" data-timeout="5000">  
         <img id="s1" src="https://farm6.staticflickr.com/5312/7051019357_9b31935926_b.jpg" width="1024" height="488" alt="Lava sky (Tenerife, Canary Islands)">
-        <div id="s2" class="void"><span>Slide two</span></div>
+        <div id="s2" class="void"></div>
         <img id="s3" src="https://farm7.staticflickr.com/6158/6136029946_c6e94b3526_b.jpg" width="1024" height="444" alt="At the top of shadowed San Andres Valley (Tenerife, Canary Islands)">
-        <div id="s4" class="void"><span>Slide four</span></div>
+        <div id="s4" class="void"></div>
       </div>
     </article>
     <script src="slideshow.js"></script>

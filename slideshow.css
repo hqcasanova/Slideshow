@@ -1,37 +1,44 @@
-.slide-controls {
+.slide-nav {
   margin: 1.8em 0;
   text-align: center; 
 }
-.slide-controls .control, .slide-controls .progress {
+.slide-nav .control, .slide-nav .progress {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
   border-color: #fafafa;
   border-radius: 100%;
 }
-.slide-controls .control {
-  margin-right: .2em;
+.slide-nav .control {
+  margin-right: .45em;
   width: 2.75em;
   line-height: 2.75em;
   border-width: .15em; 
   border-style: solid;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 300ms;     /* duration for user clicks */
 }
-.slide-controls .current {
-  background-color: #fafafa;
+.slide-nav .control:hover, .slide-nav .current, .control.on {
+  background-color: #fafafa;      /* control.on: JS-added class to trigger background and color change with progress-specific duration rule */
   color: #000;
 }
-.slide-controls .progress {
-  margin-right: .2em;
+.slide-nav .progress {
+  margin-right: .45em;
   width: .25em;
   height: .25em;    
   background-color: #fafafa;
-  opacity: 1;             /* will vary to indicate timeout progress */
+  opacity: 0;               
+  transition-property: opacity;   /* will vary to indicate timeout progress; progress-specific duration set through JS */
 }
-.slide-controls > .progress {
-  margin-left: -1.3em;    /* so that controls appear centered */
+.progress.on {                    /* JS-added class to trigger opacity change */
+  opacity: 1;
 }
-.slide-controls > .progress ~ .progress {
-  margin-left: 0;         /* undo for all children except first */
+.slide-nav > .progress {
+  margin-left: -1.3em;            /* so that controls appear centered */
+}
+.slide-nav > .progress ~ .progress {
+  margin-left: 0;                 /* undo for all children except first */
 } 
 .slide-deck {
   overflow: hidden;
@@ -49,12 +56,16 @@
   left: 0; 
   bottom: 0; 
   right: 0;
-  width: 100%;            /* to avoid squashing, will be accompanied by min-width: [natural width] injected with JS */
+  width: 100%;                    /* to avoid squashing, will be accompanied by min-width: [natural width] injected with JS */
   height: auto;
   min-height: 100%;
-  opacity: 0;             /* will be manipulated through JS */
+  opacity: 0;
+  transition-property: opacity;   /* will vary to indicate timeout progress */ 
+  transition-duration: 300ms;     /* duration for user-triggered display */   
 }
-#s2 {opacity: 1}
+.slide-deck .on {                 /* JS-added class to trigger opacity change with progress-specific duration rule */
+  opacity: 1;                    
+}
 .slide-deck .void {
   display: -webkit-flex;
   display: flex;
