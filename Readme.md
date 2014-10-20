@@ -1,13 +1,19 @@
 Slideshow with a progress indicator
 ===================================
 
-Browser support
-----------------
+Demo
+----
 
-Latest versions (as of Oct 2014) of Chrome and Safari on Mac and IOS are assumed. Given the possibility of mobile devices, a mobile-first approach will be used. Also, there are no requirements regarding the presence/absence of JavaScript.
+[http://hqcasanova.github.io/Slideshow](http://hqcasanova.github.io/Slideshow)
+If you want to fiddle with the code, head to CodePen: [http://codepen.io/hqcasanova/details/pkhjt](http://codepen.io/hqcasanova/details/pkhjt/)
+
+Browser support
+---------------
+
+Latest versions (as of Oct 2014) of Chrome and Safari on Mac and IOS are assumed. Given the possibility of mobile devices, a mobile-first approach will be used. Also, there are no requirements regarding the presence/absence of JavaScript or future support of older browsers.
 
 Implementation
-----------------
+--------------
 
 Given that the target browsers are the latest versions, a CSS3-only implementation is feasible. A quick survey on the web reveals a selection of pure CSS3 solutions. They have the advantage of
 very smooth CSS animations that integrate seamlessly with the controls, which is ideal in this
